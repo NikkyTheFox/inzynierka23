@@ -1,4 +1,4 @@
-package com.example.game.entities;
+package com.example.game.entities.character;
 
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ public class Character_service {
         this.character_repo = character_repo;
     }
 
-    public Optional<Character> findById(Long id) {
+    public Optional<Character> findById(Integer id) {
         return character_repo.findById(id);
     }
 
@@ -27,7 +27,7 @@ public class Character_service {
         return character_repo.save(videoCassette);
     }
 
-    public void deleteById(Long id) {
+    public void deleteById(Integer id) {
         character_repo.deleteById(id);
     }
 }

@@ -10,19 +10,25 @@
         <module name="game" />
         <module name="eureka" />
         <module name="config_server" />
+        <module name="Gateway" />
+        <module name="player" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config_server" target="11" />
       <module name="eureka" target="11" />
       <module name="game" target="11" />
+      <module name="Gateway" target="11" />
+      <module name="player" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Gateway" options="-parameters" />
       <module name="config_server" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="game" options="-parameters" />
+      <module name="player" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package com.example.game.entities;
+package com.example.game.entities.character;
 
 import lombok.*;
 import lombok.experimental.SuperBuilder;
